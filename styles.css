@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Cormorant SC', serif;
+}
+
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.panel-pricing {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 960px;
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.pricing-plan:last-child {
+    border-bottom: none;
+}
+
+.personalImg {
+    width: 90px;
+    margin-bottom: 25px;
+}
+
+.businessImg {
+    height: 110px;
+    margin-bottom: 25px;
+}
+
+.enterpriseImg {
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.plan-name {
+    color: #888;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.features {
+    margin: 50px 0px 25px;
+    color: #016ff9;
+}
+
+.features-item {
+    font-weight: 700;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+
+.features-item:last-child {
+    border-bottom: 1px solid #e1f1ff;
+}
+
+.price {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+}
+
+.signup-btn {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0px;
+}
+
+.signup-btn:hover, .signup-btn:focus {
+    background-color: #e1f1ff;
+    transition: background-color 200ms ease-in-out;
+}
+
+.signup-btn.middle {
+    background-color: #48aaff;
+    color: white;
+}
+
+.signup-btn.middle:hover, .signup-btn.middle:focus {
+    background-color: #259aff;
+    color: white;
+    transition: background-color 200ms ease-in-out;   
+}
+
+@media (min-width: 900px){
+    .panel-pricing {
+        flex-direction: row;
+    }
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
